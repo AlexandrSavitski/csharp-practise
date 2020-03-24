@@ -36,16 +36,18 @@ namespace Lect_7
             for (int i = 0; i < arr.Length; i++)
             {
                 arr[i] = rnd.Next(100);
-                for (int j = 0; j < arr.Length; j++)
+                
+                
+                if (num < arr[i])
                 {
-                    num = arr[j];
-                    if (num > arr[j])
-                    {
-                        num = arr[j];
-                    }
+                    num = arr[i];
                 }
+                
             }
-
+            foreach (var item in arr)
+            {
+                Console.WriteLine(item);
+            }
             Console.WriteLine(num);
         }
 
