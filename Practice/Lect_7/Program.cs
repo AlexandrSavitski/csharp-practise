@@ -18,7 +18,9 @@ namespace Lect_7
                 Console.WriteLine(item);
             }
 
-           //obj[0] = obj[0] + 10;
+            int obj2 = (int)obj[0];
+            obj2 += 10;
+            obj[0] = obj2;
             obj[2] = obj[2] + ", guys!";
 
             foreach (var item in obj)
