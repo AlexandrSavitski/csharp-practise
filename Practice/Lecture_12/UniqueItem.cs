@@ -7,10 +7,16 @@ namespace Lecture_12
      class UniqueItem
     {
         static int id = 0;
+        static int temp;
         public static int ID()
         {
-            id++;
-            Int32.TryParse(Console.ReadLine(), out id);
+            Int32.TryParse(Console.ReadLine(), out temp);
+            if (id >= temp)
+            {
+                id++;
+            }
+            else id = temp;
+            Console.WriteLine(id);
             return id;
         }
     }

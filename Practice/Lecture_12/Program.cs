@@ -6,9 +6,11 @@ namespace Lecture_12
     {
         static void Main(string[] args)
         {
-            UniqueItem uniqueItem = new UniqueItem();
 
-
+            while (true)
+            {
+                UniqueItem.ID();
+            }
         }
     }
 }
